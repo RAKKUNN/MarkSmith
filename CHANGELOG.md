@@ -2,6 +2,15 @@
 
 All notable changes to **Marksmith** will be documented in this file.
 
+## [0.2.1] - 2025-05-05
+
+### Changed
+
+- Add extension icon for Marketplace
+- Clean README for Marketplace (move dev docs to CONTRIBUTING.md)
+- Add LICENSE file
+- Add GitHub Actions CI/CD pipeline
+
 ## [0.2.0] - 2025-05-05
 
 ### Added

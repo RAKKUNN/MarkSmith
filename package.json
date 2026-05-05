@@ -2,7 +2,7 @@
   "name": "marksmith",
   "displayName": "Marksmith",
   "description": "The smart Markdown toolkit — Smart Paste, Bi-directional Preview, Document X-Ray, and more",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "publisher": "rakkunn",
   "icon": "MarkSmith.png",
   "license": "MIT",
