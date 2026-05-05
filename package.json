@@ -1,0 +1,194 @@
+{
+  "name": "marksmith",
+  "displayName": "Marksmith",
+  "description": "The smart Markdown toolkit — Smart Paste, Bi-directional Preview, Document X-Ray, and more",
+  "version": "0.2.0",
+  "publisher": "rakkunn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rakkunn/MarkSmith"
+  },
+  "homepage": "https://github.com/rakkunn/MarkSmith#readme",
+  "bugs": {
+    "url": "https://github.com/rakkunn/MarkSmith/issues"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Formatters",
+    "Linters"
+  ],
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "marksmith.openPreview",
+        "title": "Marksmith: Open Enhanced Preview",
+        "icon": "$(open-preview)"
+      },
+      {
+        "command": "marksmith.exportHtml",
+        "title": "Marksmith: Export to HTML"
+      },
+      {
+        "command": "marksmith.exportPdf",
+        "title": "Marksmith: Export to PDF"
+      },
+      {
+        "command": "marksmith.formatDocument",
+        "title": "Marksmith: Format Document"
+      },
+      {
+        "command": "marksmith.lintDocument",
+        "title": "Marksmith: Lint Document"
+      },
+      {
+        "command": "marksmith.smartPaste",
+        "title": "Marksmith: Smart Paste"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "when": "editorLangId == markdown",
+          "command": "marksmith.openPreview",
+          "group": "navigation"
+        }
+      ],
+      "editor/context": [
+        {
+          "when": "editorLangId == markdown",
+          "command": "marksmith.exportHtml",
+          "group": "marksmith"
+        },
+        {
+          "when": "editorLangId == markdown",
+          "command": "marksmith.exportPdf",
+          "group": "marksmith"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "marksmith.openPreview",
+        "key": "ctrl+shift+v",
+        "mac": "cmd+shift+v",
+        "when": "editorLangId == markdown"
+      },
+      {
+        "command": "marksmith.formatDocument",
+        "key": "ctrl+shift+f",
+        "mac": "cmd+shift+f",
+        "when": "editorLangId == markdown"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "marksmith-xray",
+          "title": "Marksmith X-Ray",
+          "icon": "$(search-fuzzy)"
+        }
+      ]
+    },
+    "views": {
+      "marksmith-xray": [
+        {
+          "type": "webview",
+          "id": "marksmith.xrayView",
+          "name": "Document X-Ray",
+          "when": "editorLangId == markdown"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Marksmith",
+      "properties": {
+        "marksmith.preview.theme": {
+          "type": "string",
+          "default": "github",
+          "enum": [
+            "github",
+            "dark",
+            "minimal"
+          ],
+          "description": "Preview theme style"
+        },
+        "marksmith.preview.fontSize": {
+          "type": "number",
+          "default": 16,
+          "description": "Preview font size in pixels"
+        },
+        "marksmith.linter.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable markdown linting on save"
+        },
+        "marksmith.formatter.onSave": {
+          "type": "boolean",
+          "default": false,
+          "description": "Auto-format markdown on save"
+        },
+        "marksmith.export.pdfMargin": {
+          "type": "string",
+          "default": "20mm",
+          "description": "PDF export margin"
+        },
+        "marksmith.smartPaste.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable Smart Paste (auto-convert HTML, URLs, tables)"
+        },
+        "marksmith.smartPaste.imageFolder": {
+          "type": "string",
+          "default": "assets",
+          "description": "Folder for pasted images (relative to workspace root)"
+        },
+        "marksmith.xray.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable Document X-Ray sidebar analysis"
+        },
+        "marksmith.xray.checkLinks": {
+          "type": "boolean",
+          "default": false,
+          "description": "Auto-check link validity when analyzing"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "npm run compile && node out/test/analyzer.test.js && node out/test/tableConverter.test.js && node out/test/htmlToMarkdown.test.js",
+    "lint": "eslint src --ext ts",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^13.0.7",
+    "@types/node": "^20.11.0",
+    "@types/turndown": "^5.0.6",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^8.59.2",
+    "@typescript-eslint/parser": "^8.59.2",
+    "@vscode/vsce": "^2.22.0",
+    "eslint": "^10.3.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "katex": "^0.16.9",
+    "markdown-it": "^14.0.0",
+    "markdown-it-texmath": "^1.0.0",
+    "markdownlint": "^0.33.0",
+    "mermaid": "^10.7.0",
+    "puppeteer-core": "^21.7.0",
+    "turndown": "^7.2.4"
+  }
+}
