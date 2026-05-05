@@ -6,6 +6,7 @@ src/**
 samples/**
 .gitignore
 .eslintrc.json
+CONTRIBUTING.md
 tsconfig.json
 **/*.map
 node_modules/**
