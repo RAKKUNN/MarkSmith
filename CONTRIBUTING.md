@@ -1,5 +1,27 @@
 # Contributing to Marksmith
 
+## 설치 및 빌드
+
+```bash
+cd marksmith
+npm install
+npm run compile
+```
+
+## 개발 모드 실행
+
+1. VS Code에서 이 폴더를 열기
+2. `F5`를 눌러 Extension Development Host 실행
+3. `.md` 파일을 열고 `Cmd+Shift+V`로 미리보기 확인
+
+## 패키징
+
+```bash
+npm run package
+```
+
+생성된 `.vsix` 파일을 VS Code / Windsurf에서 직접 설치할 수 있습니다.
+
 ## 릴리스 절차
 
 1. `CHANGELOG.md`에 새 버전 섹션 추가
