@@ -6,6 +6,8 @@ VS Code / Windsurf 向けのスマート Markdown ツールキット。
 
 **[English](./README.md)** | **[한국어](./README.ko.md)** | **[中文](./README.zh.md)**
 
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?logo=github)](https://github.com/sponsors/RAKKUNN)
+
 ## ハイライト
 
 ### Smart Paste
@@ -79,6 +81,12 @@ VS Code / Windsurf 向けのスマート Markdown ツールキット。
 | Marksmith: Lint Document | — | ドキュメントをリント |
 | Marksmith: Export to HTML | — | HTML にエクスポート |
 | Marksmith: Export to PDF | — | PDF にエクスポート |
+
+## サポート
+
+Marksmith が役に立ったら、プロジェクトの[スポンサー](https://github.com/sponsors/RAKKUNN)をご検討ください。
+
+[![Sponsor RAKKUNN](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=github)](https://github.com/sponsors/RAKKUNN)
 
 ## ライセンス
 

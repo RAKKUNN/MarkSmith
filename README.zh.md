@@ -6,6 +6,8 @@
 
 **[English](./README.md)** | **[한국어](./README.ko.md)** | **[日本語](./README.ja.md)**
 
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?logo=github)](https://github.com/sponsors/RAKKUNN)
+
 ## 功能亮点
 
 ### Smart Paste
@@ -79,6 +81,12 @@
 | Marksmith: Lint Document | — | 检查文档 |
 | Marksmith: Export to HTML | — | 导出为 HTML |
 | Marksmith: Export to PDF | — | 导出为 PDF |
+
+## 赞助
+
+如果您觉得 Marksmith 有用，请考虑[赞助](https://github.com/sponsors/RAKKUNN)本项目。
+
+[![Sponsor RAKKUNN](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=github)](https://github.com/sponsors/RAKKUNN)
 
 ## 许可证
 

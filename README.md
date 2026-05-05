@@ -6,6 +6,8 @@ The smart Markdown toolkit for VS Code / Windsurf.
 
 **[한국어](./README.ko.md)** | **[中文](./README.zh.md)** | **[日本語](./README.ja.md)**
 
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?logo=github)](https://github.com/sponsors/RAKKUNN)
+
 ## Highlights
 
 ### Smart Paste
@@ -79,6 +81,12 @@ Real-time document analysis in the sidebar.
 | Marksmith: Lint Document | — | Lint document |
 | Marksmith: Export to HTML | — | Export to HTML |
 | Marksmith: Export to PDF | — | Export to PDF |
+
+## Support
+
+If you find Marksmith useful, please consider [sponsoring](https://github.com/sponsors/RAKKUNN) the project.
+
+[![Sponsor RAKKUNN](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=github)](https://github.com/sponsors/RAKKUNN)
 
 ## License
 

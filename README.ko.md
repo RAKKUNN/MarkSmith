@@ -6,6 +6,8 @@ VS Code / Windsurf를 위한 스마트 마크다운 툴킷.
 
 **[English](./README.md)** | **[中文](./README.zh.md)** | **[日本語](./README.ja.md)**
 
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?logo=github)](https://github.com/sponsors/RAKKUNN)
+
 ## 주요 기능
 
 ### Smart Paste
@@ -79,6 +81,12 @@ VS Code / Windsurf를 위한 스마트 마크다운 툴킷.
 | Marksmith: Lint Document | — | 문서 린팅 |
 | Marksmith: Export to HTML | — | HTML로 내보내기 |
 | Marksmith: Export to PDF | — | PDF로 내보내기 |
+
+## 후원
+
+Marksmith가 유용하다면 프로젝트 [후원](https://github.com/sponsors/RAKKUNN)을 고려해 주세요.
+
+[![Sponsor RAKKUNN](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=github)](https://github.com/sponsors/RAKKUNN)
 
 ## 라이선스
 
