@@ -35,4 +35,4 @@ jobs:
         run: npm test
 
       - name: Package (verify .vsix builds)
-        run: npx vsce package --no-dependencies
+        run: npx vsce package

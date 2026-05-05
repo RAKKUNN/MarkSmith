@@ -9,4 +9,3 @@ samples/**
 CONTRIBUTING.md
 tsconfig.json
 **/*.map
-node_modules/**

@@ -35,10 +35,10 @@ jobs:
         run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> "$GITHUB_OUTPUT"
 
       - name: Package extension
-        run: npx vsce package --no-dependencies -o marksmith-${{ steps.version.outputs.VERSION }}.vsix
+        run: npx vsce package -o marksmith-${{ steps.version.outputs.VERSION }}.vsix
 
       - name: Publish to VS Code Marketplace
-        run: npx vsce publish --no-dependencies -p ${{ secrets.VSCE_PAT }}
+        run: npx vsce publish -p ${{ secrets.VSCE_PAT }}
 
       - name: Extract changelog for this version
         id: changelog

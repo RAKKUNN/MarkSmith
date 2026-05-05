@@ -2,6 +2,12 @@
 
 All notable changes to **Marksmith** will be documented in this file.
 
+## [0.2.2] - 2025-05-05
+
+### Fixed
+
+- Fix extension not activating: include production dependencies (node_modules) in VSIX package
+
 ## [0.2.1] - 2025-05-05
 
 ### Changed
