@@ -169,7 +169,7 @@
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "test": "npm run compile && node out/test/analyzer.test.js && node out/test/tableConverter.test.js && node out/test/htmlToMarkdown.test.js",
-    "lint": "eslint src --ext ts",
+    "lint": "eslint src/",
     "package": "vsce package"
   },
   "devDependencies": {

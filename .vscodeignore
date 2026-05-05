@@ -5,7 +5,7 @@
 src/**
 samples/**
 .gitignore
-.eslintrc.json
+eslint.config.mjs
 CONTRIBUTING.md
 README.ko.md
 README.zh.md
