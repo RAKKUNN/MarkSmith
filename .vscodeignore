@@ -7,5 +7,8 @@ samples/**
 .gitignore
 .eslintrc.json
 CONTRIBUTING.md
+README.ko.md
+README.zh.md
+README.ja.md
 tsconfig.json
 **/*.map
